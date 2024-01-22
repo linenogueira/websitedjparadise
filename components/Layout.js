@@ -35,15 +35,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="min-h-screen bg-black text-white">
-        {/* Seu cabeçalho ou navegação aqui (pode ser movido para um componente Header) */}
-        <header className="p-5">
-          <h1 className="text-4xl font-bold">DJ PARADISE</h1>
-        </header>
+  
 
-        {/* Conteúdo da página */}
-        <main className="max-w-screen-lg p-5 mx-auto">{children}</main>
-      </div>
+   
 
       {/* Componente de áudio */}
       <audio id="background-music" className="hidden" controls>

@@ -1,6 +1,3 @@
-
-
-
 import axios from 'axios';
 
 export default function Home() {
@@ -47,7 +44,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-7">
+          {/* Image below WhatsApp only on mobile */}
+          <div className="mt-7 hidden md:block"> 
             <img src="/images/background-more/cartoon2.png" alt="Description of the image" className="rounded-lg" />
           </div>
           <div className="background-containerfundo"></div>
@@ -56,12 +54,3 @@ export default function Home() {
     </>
   );
 }
-
-
-
-
-
-
-
-
-

@@ -38,9 +38,14 @@ const Home = () => {
 
   return (
     <>
-      <div className="background-container">
-        <img src="/images/background-more/fundo1.png" alt="Background Image 1" className="background-image" />
-      </div>
+  
+  <div className="background-container w-full h-screen">
+  <img
+    src="/images/background-more/fundo1.png"
+    alt="Background Image 1"
+    className="background-image w-full h-full object-cover"
+  />
+</div>
 
       <div className="background-containerfundo"></div>
 
@@ -50,15 +55,15 @@ const Home = () => {
             <div className="flex items-center"></div>
           </div>
           <div className="order-first lg:order-last flex-shrink-0 lg:w-[800px] h-[100px] ml-auto">
-            {/* Your content here */}
+      
           </div>
         </div>
         <br></br>
       </div>
 
       <div className="py-200">
-        <p className="text-3xl text-white font-semibold">CATCH ME IN ACTION</p>
-        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 w-full mt-2">
+      <p className="text-2xl md:text-3xl lg:text-4xl text-white font-semibold">CATCH ME IN ACTION</p>
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 w-full mt-1">
           {mediaPaths.map((mediaPath, index) => {
             const isImage = mediaPath.endsWith('.jpg');
             const containerStyle = {

@@ -7,7 +7,7 @@ export default function Home() {
       
       <div className="py-16">
         {/* Text Container */}
-        <div className="bg-neutral-600/10 p-9 shadow-lg mb-15 text-left text-base ">
+        <div className="bg-neutral-600/10 p-9 shadow-lg mb-15 text-center text-sm md:text-base lg:text-lg">
   
           <p className="mb-4"> Hey there! I am DJ Paradise, Born in the beating heart of West Africa, 
             my music journey found its rhythm amid in the bustling streets of Berlin.</p> 
@@ -32,12 +32,8 @@ export default function Home() {
           music. Get Ready to Dance. Welcome to the Paradise!.</p>
   
         </div>
-        <div className="background-containerfundo"> 
-  
-  </div>
-
         {/* Image Container */}
-        <div className="aboutimg">
+      <div className="aboutimg">
         <div className="overflow-hidden ">
           <img
             src="/images/background-more/aboutme.png"
@@ -46,7 +42,9 @@ export default function Home() {
           />
         </div>
       </div>
+      <div className="background-containerfundo"></div>
       </div>
+     
     );
   }
   
