@@ -3,9 +3,24 @@
 @tailwind components;
 @tailwind utilities;
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'K2D', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+
 html {
   color: #fff; /* Text color */
-  margin-top: -1%;
+ 
 }
 
 ::-webkit-scrollbar {
@@ -30,9 +45,7 @@ html {
   background-color: #a1a1a1;
 }
 
-* {
-  font-family: 'K2D', sans-serif;
-}
+
 
 .overflow-small::-webkit-scrollbar {
   width: 8px;
@@ -88,8 +101,15 @@ html {
 }
 
 .py-200 {
-  margin-top: 100px; /* Adjust top margin as needed */
+  margin-top: -400px; /* Adjust top margin as needed */
   margin-left: -50px;
+}
+
+@media screen and (max-width: 768px) {
+  .py-200 {
+    margin-top: -500px; /* Ajuste o valor conforme necessário */
+    margin-left: 0; /* Remova a margem negativa */
+  }
 }
 
 .py-30 {
@@ -110,7 +130,7 @@ html {
 }
 
 .aboutimg {
-  margin-top: -600px; /* Adjust top margin as needed */
+  margin-top: -720px; /* Adjust top margin as needed */
   margin-left: 700px;
   width: 12cm;
   height: 8cm;
@@ -125,13 +145,31 @@ html {
   color: #a47e1b;
 }
 
+
 .background-container {
-  position: absolute;
-  top: 20;
-  left: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin-left: -220px; /* Ajustado apenas para desktop */
+  margin-top: 2px;  /* Ajustado apenas para desktop */
+}
+
+.background-image {
   width: 100%;
-  height: 80%;
-  z-index: -1;
+  height: 100%;
+  object-fit: contain; /* Alterado para cover para melhor cobertura */
+  object-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .background-container {
+    margin-left: 0;
+    margin-top: -50px;
+  }
+  .background-image {
+    object-fit: contain; /* Mantido cover para dispositivos menores */
+  }
 }
 
 .background-containerfundo {
@@ -143,12 +181,4 @@ html {
   height: 100%;
   z-index: -2;
 }
-
-.background-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-}
-
 

@@ -39,19 +39,18 @@ const Home = () => {
   return (
     <>
   
-  <div className="background-container w-full h-screen">
+  <div className="background-container">
   <img
     src="/images/background-more/fundo1.png"
     alt="Background Image 1"
-    className="background-image w-full h-full object-cover"
+    className="background-image"
   />
 </div>
-
       <div className="background-containerfundo"></div>
 
       <div className="relative">
         <div className="flex flex-col lg:flex-row justify-between w-full p-40 px-30 items-center h-full">
-          <div className="flex flex-col lg:justify-start justify-center items-center lg:items-start mt-6 lg:mt-0 w-full">
+          <div className="flex flex-col lg:justify-start justify-center items-center lg:items-start mt-6  w-full">
             <div className="flex items-center"></div>
           </div>
           <div className="order-first lg:order-last flex-shrink-0 lg:w-[800px] h-[100px] ml-auto">
