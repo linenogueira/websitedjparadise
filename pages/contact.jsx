@@ -44,9 +44,14 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Image below WhatsApp only on mobile */}
-          <div className="mt-7 hidden md:block"> 
-            <img src="/images/background-more/cartoon2.png" alt="Description of the image" className="rounded-lg" />
+  
+          <div className="mt-7 overflow-hidden md:block"> 
+            <img src="/images/background-more/cartoon2.png" alt="Description of the image" className="rounded-lg" 
+             style={{ width: 'auto', height: 'auto', display: 'block' }}
+            
+            />
+           
+          
           </div>
           <div className="background-containerfundo"></div>
         </div>
