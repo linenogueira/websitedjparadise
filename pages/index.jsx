@@ -4,10 +4,10 @@ import Router from 'next/router';
 
 const Home = () => {
   const mediaPaths = [
-    '/images/videos/number1.mp4',
-    '/images/videos/number2.mp4',
-    '/images/videos/number3.mp4',
-    '/images/videos/number4.mp4',
+
+    '/images/action/photo10.jpg',
+    '/images/action/photo9.jpg',
+    '/images/action/photo8.jpg',
     '/images/action/photo7.jpg',
     '/images/action/photo6.jpg',
     '/images/action/photo2.jpg',
@@ -15,9 +15,15 @@ const Home = () => {
     '/images/action/photo1.jpg',
     '/images/action/photo4.jpg',
     '/images/action/photo3.jpg',
-    '/images/action/photo.jpg',
-  ];
-
+    '/images/videos/number1.mp4',
+    '/images/videos/number2.mp4',
+    '/images/videos/number3.mp4',
+    '/images/videos/number4.mp4',
+    '/images/videos/number5.mp4',
+    '/images/videos/number6.mp4',
+    '/images/videos/number7.mp4',
+    '/images/videos/number8.mp4',
+  ]
   const [fullscreenSrc, setFullscreenSrc] = useState(null);
  
 
@@ -61,8 +67,8 @@ const Home = () => {
       </div>
 
       <div className="py-200">
-      <p className="text-2xl md:text-3xl lg:text-4xl text-white font-semibold">CATCH ME IN ACTION</p>
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 w-full mt-1">
+      <p className="text-2xl md:text-3xl lg:text-4xl text-white font-semibold ">CATCH ME IN ACTION</p>
+        <div className= "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-3 gap-8 mt-8 ">
           {mediaPaths.map((mediaPath, index) => {
             const isImage = mediaPath.endsWith('.jpg');
             const containerStyle = {
@@ -70,7 +76,7 @@ const Home = () => {
               alignItems: 'center',
               justifyContent: 'center',
               background: 'rgba(0, 0, 0, 0.2)',
-              padding: '0.5rem',
+              padding: '0.1rem',
             };
             return (
               <div
