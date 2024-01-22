@@ -2,7 +2,7 @@
 const items = [
     { icon: 'fab fa-mixcloud', link: 'https://www.mixcloud.com/Djparadise1/' },
     { icon: 'fab fa-instagram', link: 'https://instagram.com/djparadise_1' },
-    { icon: 'fab fa-facebook', link: 'https://facebook.com/Lampard-Khalifah-Paradise/' },
+    { icon: 'fab fa-facebook', link: 'https://www.facebook.com/profile.php?id=100014142198861' },
    
   ]
 
@@ -20,7 +20,7 @@ import { useRouter } from 'next/router';
 const Header = () => {
     const router = useRouter();
     return <>
-        <div className="w-full border-b-2 border-neutral-800/20 pb-2">
+        <div className="w-full border-b-2 border-neutral-800/20 pb-2" style={{ zIndex: 1000, position: 'relative' }}>
             <div className="flex flex-col md:flex-row w-full items-center md:justify-between">
                 <p className="font-rockwell text-xl text-gold" >Making Music Speaks Louder Than Words</p>
                 <div className="flex items-center space-x-2">
