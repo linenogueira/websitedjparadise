@@ -100,6 +100,16 @@ html {
   height: 300%;
 }
 
+@media screen and (max-width: 768px) {
+  .py-16 {
+    margin-top: 5px; /* Ajuste conforme necessário */
+    margin-left: 0; /* Remova a margem negativa */
+    width: auto; /* Ajuste a largura conforme necessário */
+    height: auto; /* Ajuste a altura conforme necessário */
+  }
+}
+
+
 .py-200 {
   margin-top: -400px; /* Adjust top margin as needed */
   margin-left: -50px;
@@ -134,6 +144,17 @@ html {
   margin-left: 700px;
   width: 12cm;
   height: 8cm;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutimg {
+
+    order: 2; /* Coloca a imagem após o texto em telas menores */
+   width: 100%; /* Ocupa a largura total do contêiner */
+   margin-top: 10px; 
+   margin-left: 0px; 
+   z-index: 10;
+  }
 }
 
 /* Adjust the position using transform */

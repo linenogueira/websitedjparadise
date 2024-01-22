@@ -6,7 +6,7 @@ export default function Home() {
 
       
       <div className="py-16">
-        {/* Text Container */}
+
         <div className="bg-neutral-600/10 p-9 shadow-lg mb-15 text-center text-sm md:text-base lg:text-lg">
   
           <p className="mb-4"> Hey there! I am DJ Paradise, Born in the beating heart of West Africa, 
@@ -38,6 +38,7 @@ export default function Home() {
           <img
             src="/images/background-more/aboutme.png"
             alt="Your Name"
+            style={{ width: '100%', height: 'auto', display: 'block' }}
             className="object-cover w-full h-full"
           />
         </div>
