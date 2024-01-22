@@ -82,8 +82,8 @@ const Home = () => {
                 {isImage ? (
                   <img alt={`Image ${index + 1}`} src={mediaPath} className="rounded-lg max-w-full max-h-full" />
                 ) : (
-                  <video controls className="rounded-lg max-w-full max-h-full">
-                    <source src={mediaPath} type="video/mp4" />
+                  <video controls playsInline className="rounded-lg max-w-full max-h-full">
+                   <source src={mediaPath} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 )}
