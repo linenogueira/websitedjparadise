@@ -1,6 +1,5 @@
 import '../styles/globals.css'
 import Layout from '../components/Layout';
-import '../styles/tooltip.css'
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import 'tippy.js/animations/scale-subtle.css';
