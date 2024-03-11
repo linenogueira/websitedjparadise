@@ -1,16 +1,9 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
 import Layout from '../components/Layout';
 import Head from 'next/head';
-import dynamic from 'next/dynamic';
-import 'tippy.js/animations/scale-subtle.css';
-import 'tippy.js/animations/scale-extreme.css';
-import 'tippy.js/animations/shift-away.css';
-import 'tippy.js/animations/shift-toward.css';
-import Router, { useRouter } from "next/router";
-import { Fragment, useEffect, useState } from "react";
-
-
-const Header = dynamic(() => import('../components/Header'))
+import Header from '../components/Header'; // Importing Header directly
+import Router, { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 const audioFiles = [
   '/audio/Drift Remix (Dirty).mp3',
@@ -20,8 +13,8 @@ const audioFiles = [
 ];
 
 function MyApp({ Component, pageProps }) {
-    const router = useRouter();
-    const isHomePage = router.pathname === '/index.jsx';
+  const router = useRouter();
+  const isHomePage = router.pathname === '/index.jsx';
   const [load, setLoad] = useState(false);
   const [currentAudioIndex, setCurrentAudioIndex] = useState(0);
 
@@ -58,23 +51,24 @@ function MyApp({ Component, pageProps }) {
     audio.src = audioFiles[index];
     audio.play();
   };
-  return (<>
-   <Layout></Layout>
-    <Head>
+
+  return (
+    <>
+      <Layout></Layout>
+      <Head>
         <title>DJ PARADISE</title>
-        <link rel="shortcut icon" href="https://media.discordapp.net/attachments/737348411568685066/954506783777493072/Umut_Bayraktar_Icon.png" type="image/x-icon" ></link>
+        <link rel="shortcut icon" href="https://media.discordapp.net/attachments/737348411568685066/954506783777493072/Umut_Bayraktar_Icon.png" type="image/x-icon" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+      </Head>
 
-    </Head>
-  
-    <main className=" h-full border-neutral-700/50 w-full">
+      <main className="h-full border-neutral-700/50 w-full">
         <div className="min-h-screen max-w-screen-lg p-5 w-full md:w-10/12 lg:w-8/12 mx-auto transition-all duration-300">
-          <Header />
+          <Header currentAudioIndex={currentAudioIndex} handleAudioChange={handleAudioChange} audioFiles={audioFiles} />
           <Component {...pageProps} />
         </div>
 
-        {isHomePage && ( // Render the text only on the home page
+        {isHomePage && (
           <div className="bg-neutral-800/5">
             <div className="max-w-screen-lg p-5 w-full md:w-10/12 lg:w-8/12 mx-auto transition-all duration-300">
               <div className="md:flex w-full items-center justify-between">
@@ -86,13 +80,12 @@ function MyApp({ Component, pageProps }) {
             </div>
           </div>
         )}
-     
 
+      </main>
 
-    </main>
-    <audio id="background-music" src={audioFiles[currentAudioIndex]} />
+      <audio id="background-music" src={audioFiles[currentAudioIndex]} />
       <div className="audio-player">
-      
+        {/* Include audio player controls or related elements here */}
       </div>
     </>
   );

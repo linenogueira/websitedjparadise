@@ -77,9 +77,27 @@ html {
   margin-left: -500px;
 }
 
+.audio-player {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+
+.audio-player button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 0.9rem;
+}
+
+
+
 @media screen and (max-width: 768px) {
   .py-20 {
-    margin-top: 1px; 
+    margin-top: -35px; 
     margin-left: 0; 
     width: auto; 
     height: auto; 
@@ -88,7 +106,7 @@ html {
 
 
 .py-16 {
-  margin-top: -20px; 
+  margin-top: -10px; 
   margin-left: -150px;
   width: 80%;
   height: 300%;
@@ -96,7 +114,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .py-16 {
-    margin-top: 5px; 
+    margin-top: -55px; 
     margin-left: 0; 
     width: auto; 
     height: auto; 
@@ -194,7 +212,7 @@ html {
   height: 100vh;
   overflow: hidden;
   margin-left: -270px; 
-  margin-top: 1px;  
+  margin-top: -80px;  
 }
 
 .background-image {
@@ -206,8 +224,9 @@ html {
 
 @media screen and (max-width: 768px) {
   .background-container {
-    margin-left: -20px;
-    margin-top: -200px;
+    margin-left: -45px;
+    margin-top: -230px;
+    margin-bottom: -30px;
   }
   .background-image {
     object-fit: contain; 

@@ -27,8 +27,8 @@ export default function Home() {
 
   return (
     <div className="py-30">
-      <p className="text-5xl text-white font-semibold text-center"> Sharing a few gigs I've been part of 
-– good times, great beats!</p>
+      <p className="text-3xl text-white font-semibold text-center"> Sharing a few gigs I've been part of 
+            – good times, great beats!</p>
      
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-3 gap-8 mt-8">
         {allProjects.map((project, index) => (
