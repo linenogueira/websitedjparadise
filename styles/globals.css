@@ -190,11 +190,11 @@ html {
 
 .background-container {
   position: relative;
-  width: 100vw;
+  width: 110vw;
   height: 100vh;
   overflow: hidden;
-  margin-left: -250px; 
-  margin-top: 2px;  
+  margin-left: -270px; 
+  margin-top: 1px;  
 }
 
 .background-image {
