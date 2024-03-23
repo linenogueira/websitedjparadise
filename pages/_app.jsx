@@ -1,7 +1,8 @@
+// pages/_app.js
 import '../styles/globals.css';
 import Layout from '../components/Layout';
 import Head from 'next/head';
-import Header from '../components/Header'; // Importing Header directly
+import Header from '../components/Header';
 import Router, { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
@@ -17,6 +18,29 @@ function MyApp({ Component, pageProps }) {
   const isHomePage = router.pathname === '/index.jsx';
   const [load, setLoad] = useState(false);
   const [currentAudioIndex, setCurrentAudioIndex] = useState(0);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const customCursor = document.querySelector('.custom-cursor');
+      customCursor.style.left = e.pageX + 'px';
+      customCursor.style.top = e.pageY + 'px';
+
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = e.pageX + 'px';
+      star.style.top = e.pageY + 'px';
+      document.body.appendChild(star);
+      setTimeout(() => {
+        star.remove();
+      }, 1500);
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
 
   useEffect(() => {
     setTimeout(() => {

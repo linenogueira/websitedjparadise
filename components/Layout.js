@@ -1,5 +1,7 @@
+
 // components/Layout.js
 import React, { useEffect, useState } from 'react';
+import CustomCursor from './CustomCursor'; // Importe o componente CustomCursor
 
 const audioFiles = [
   '/audio/Drift Remix (Dirty).mp3',
@@ -35,15 +37,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-  
-
-   
-
-      {/* Componente de áudio */}
-      <audio id="background-music" className="hidden" controls>
-        <source src={audioFiles[currentAudioIndex]} type="audio/mp3" />
-        Your browser does not support the audio element.
-      </audio>
+      <CustomCursor /> {/* Adicione o componente CustomCursor aqui */}
+      <div className="layout">
+        {/* Outros elementos do layout */}
+        {children}
+      </div>
     </>
   );
 };

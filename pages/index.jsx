@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import MediaModal from '../components/MediaModal';
 import Router from 'next/router';
 
+
 const Home = () => {
   const mediaPaths = [
 
@@ -42,12 +43,38 @@ const Home = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const customCursor = document.querySelector('.custom-cursor');
+      customCursor.style.left = e.pageX + 'px';
+      customCursor.style.top = e.pageY + 'px';
+
+      // Criar estrela
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = e.pageX + 'px';
+      star.style.top = e.pageY + 'px';
+      document.body.appendChild(star);
+      setTimeout(() => {
+        star.remove();
+      }, 1500); // Tempo de vida das estrelas em milissegundos
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
+
   return (
     <>
   
   <div className="background-container">
   <img
-    src="/images/background-more/fundo1.png"
+    src="/images/background-more/fundonew.png"
     alt="Background Image 1"
     className="background-image"
   />
@@ -65,6 +92,19 @@ const Home = () => {
         </div>
         <br></br>
       </div>
+
+       {/* Cursor Personalizado */}
+       
+
+<div className="relative">
+  <div className="flex flex-col lg:flex-row justify-between w-full p-40 px-30 items-center h-full">
+    <div className="flex flex-col lg:justify-start justify-center items-center lg:items-start mt-6  w-full">
+      <div className="flex items-center"></div>
+    </div>
+    <div className="order-first lg:order-last flex-shrink-0 lg:w-[800px] h-[100px] ml-auto"></div>
+  </div>
+  <br />
+</div>
 
       <div className="py-200">
       <p className="text-2xl md:text-3xl lg:text-4xl text-white font-semibold ">CATCH ME IN ACTION</p>

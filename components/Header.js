@@ -23,7 +23,7 @@ const Header = ({ currentAudioIndex, handleAudioChange, audioFiles }) => {
     <>
       <div className="w-full border-b-2 border-neutral-800/20 pb-2" style={{ zIndex: 1000, position: 'relative' }}>
         <div className="flex flex-col md:flex-row w-full items-center md:justify-between">
-          <p className="font-rockwell text-xl text-gold">Making Music Speaks Louder Than Words</p>
+          <p className="font-rockwell text-xl text-gold">                                                 </p>
           <div className="flex items-center space-x-2">
             {socialItems.map((item) => (
               <a
