@@ -227,15 +227,15 @@ html {
     width: 110vw;
     height: 170vh;
     margin-left: -45px;
-    margin-top: -480px;
-    margin-bottom: -700px;
+    margin-top: -530px;
+    margin-bottom: -750px;
   }
   .background-image {
     object-fit: contain; 
   }
   .background-containerfundo {
     background-image: url('/images/background-more/bc11.avif') ;
-    background-size: 200%;
+    background-size: 280%;
     background-position: top;
     position:relative;
     top: 0;
