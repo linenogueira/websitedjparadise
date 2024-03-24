@@ -11,15 +11,15 @@ const Home = () => {
     '/images/videos/number4.mp4',
     '/images/videos/number5.mp4',
     '/images/videos/number6.mp4',
-    '/images/videos/number7.mp4',
-    '/images/videos/number8.mp4',
     '/images/action/photo10.jpg',
     '/images/action/photo9.jpg',
     '/images/action/photo8.jpg',
     '/images/action/photo7.jpg',
-    '/images/action/photo6.jpg',
     '/images/action/photo2.jpg',
     '/images/action/photo5.jpg',
+    '/images/videos/number7.mp4',
+    '/images/videos/number8.mp4',
+    '/images/action/photo6.jpg',
     '/images/action/photo1.jpg',
     '/images/action/photo4.jpg',
     '/images/action/photo3.jpg',
@@ -82,13 +82,12 @@ const Home = () => {
       <div className="background-containerfundo"></div>
 
       <div className="relative">
-        <div className="flex flex-col lg:flex-row justify-between w-full p-40 px-30 items-center h-full">
+        
           <div className="flex flex-col lg:justify-start justify-center items-center lg:items-start mt-6  w-full">
             <div className="flex items-center"></div>
           </div>
           <div className="order-first lg:order-last flex-shrink-0 lg:w-[800px] h-[100px] ml-auto">
       
-          </div>
         </div>
         <br></br>
       </div>

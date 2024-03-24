@@ -212,8 +212,8 @@ html {
   height: 150vh;
   overflow: hidden;
   margin-left: -270px; 
-  margin-top: -125px; 
-  margin-bottom: -600px;
+  margin-top: -145px; 
+  margin-bottom: -280px;
 }
 
 .background-image {
@@ -229,7 +229,7 @@ html {
     height: 170vh;
     margin-left: -45px;
     margin-top: -480px;
-    margin-bottom: -750px;
+    margin-bottom: -400px;
   }
   .background-image {
     object-fit: contain; 
