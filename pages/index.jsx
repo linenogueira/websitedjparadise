@@ -5,7 +5,14 @@ import Router from 'next/router';
 
 const Home = () => {
   const mediaPaths = [
-
+    '/images/videos/number1.mp4',
+    '/images/videos/number2.mp4',
+    '/images/videos/number3.mp4',
+    '/images/videos/number4.mp4',
+    '/images/videos/number5.mp4',
+    '/images/videos/number6.mp4',
+    '/images/videos/number7.mp4',
+    '/images/videos/number8.mp4',
     '/images/action/photo10.jpg',
     '/images/action/photo9.jpg',
     '/images/action/photo8.jpg',
@@ -16,14 +23,7 @@ const Home = () => {
     '/images/action/photo1.jpg',
     '/images/action/photo4.jpg',
     '/images/action/photo3.jpg',
-    '/images/videos/number1.mp4',
-    '/images/videos/number2.mp4',
-    '/images/videos/number3.mp4',
-    '/images/videos/number4.mp4',
-    '/images/videos/number5.mp4',
-    '/images/videos/number6.mp4',
-    '/images/videos/number7.mp4',
-    '/images/videos/number8.mp4',
+  
   ]
   const [fullscreenSrc, setFullscreenSrc] = useState(null);
  
