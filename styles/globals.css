@@ -212,7 +212,8 @@ html {
   height: 150vh;
   overflow: hidden;
   margin-left: -270px; 
-  margin-top: -125px;  
+  margin-top: -125px; 
+  margin-bottom: -600px;
 }
 
 .background-image {
