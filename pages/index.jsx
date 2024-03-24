@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import MediaModal from '../components/MediaModal';
+
 import Router from 'next/router';
 
 
@@ -40,31 +40,6 @@ const Home = () => {
 
     return () => {
       Router.events.off('routeChangeStart', handleRouteChange);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      const customCursor = document.querySelector('.custom-cursor');
-      customCursor.style.left = e.pageX + 'px';
-      customCursor.style.top = e.pageY + 'px';
-
-      // Criar estrela
-      const star = document.createElement('div');
-      star.classList.add('star');
-      star.style.left = e.pageX + 'px';
-      star.style.top = e.pageY + 'px';
-      document.body.appendChild(star);
-      setTimeout(() => {
-        star.remove();
-      }, 1500); // Tempo de vida das estrelas em milissegundos
-    };
-
-    document.addEventListener('mousemove', handleMouseMove);
-
-
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 

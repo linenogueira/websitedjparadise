@@ -1,13 +1,14 @@
 
 // components/Layout.js
 import React, { useEffect, useState } from 'react';
-import CustomCursor from './CustomCursor'; // Importe o componente CustomCursor
+
 
 const audioFiles = [
-  '/audio/Drift Remix (Dirty).mp3',
+  '/audio/My G.mp3',
   '/audio/olivetheboy - GoodSin myfreemp3.vip.mp3',
   '/audio/Blessed.mp3',
-  '/audio/My G.mp3'
+  '/audio/Drift Remix (Dirty).mp3'
+
 ];
 
 const Layout = ({ children }) => {
@@ -37,7 +38,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <CustomCursor /> {/* Adicione o componente CustomCursor aqui */}
+     
       <div className="layout">
         {/* Outros elementos do layout */}
         {children}

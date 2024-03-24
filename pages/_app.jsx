@@ -20,29 +20,6 @@ function MyApp({ Component, pageProps }) {
   const [currentAudioIndex, setCurrentAudioIndex] = useState(0);
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      const customCursor = document.querySelector('.custom-cursor');
-      customCursor.style.left = e.pageX + 'px';
-      customCursor.style.top = e.pageY + 'px';
-
-      const star = document.createElement('div');
-      star.classList.add('star');
-      star.style.left = e.pageX + 'px';
-      star.style.top = e.pageY + 'px';
-      document.body.appendChild(star);
-      setTimeout(() => {
-        star.remove();
-      }, 1500);
-    };
-
-    document.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
-
-  useEffect(() => {
     setTimeout(() => {
       setLoad(true);
       document.documentElement.style = 'pointer-events: all;';
