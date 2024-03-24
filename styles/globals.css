@@ -229,7 +229,7 @@ html {
     height: 170vh;
     margin-left: -45px;
     margin-top: -480px;
-    margin-bottom: -400px;
+    margin-bottom: 100px;
   }
   .background-image {
     object-fit: contain; 
@@ -255,48 +255,4 @@ html {
   width: 100%;
   height: 100%;
   z-index: -2;
-}
-
-.custom-cursor {
-  width: 50px;
-  height: 50px;
-  background-image: url('/images/background-more/headphones.png');
-  background-size: 94%;
-  position: absolute;
-  top: 0;
-  left: -2;
-  pointer-events: none;
-  z-index: 9999; /* Certifique-se de que o cursor personalizado esteja na frente de outros elementos */
-}
-
-.star {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  pointer-events: none;
-  animation: twinkle 1.0s infinite;
-}
-
-@keyframes twinkle {
-  0% {
-    opacity: 0;
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-20px) scale(0.5);
-  }
-}
-
-
-
-
-
-body {
-  cursor: none; /* Oculta o cursor padrão */
 }

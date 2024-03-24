@@ -58,29 +58,18 @@ const Home = () => {
 </div>
       <div className="background-containerfundo"></div>
 
-      <div className="relative">
-        
-          <div className="flex flex-col lg:justify-start justify-center items-center lg:items-start mt-6  w-full">
-            <div className="flex items-center"></div>
-          </div>
-          <div className="order-first lg:order-last flex-shrink-0 lg:w-[800px] h-[100px] ml-auto">
-      
-        </div>
-        <br></br>
-      </div>
-
-       {/* Cursor Personalizado */}
+     
        
 
 <div className="relative">
-  <div className="flex flex-col lg:flex-row justify-between w-full p-40 px-30 items-center h-full">
+  
     <div className="flex flex-col lg:justify-start justify-center items-center lg:items-start mt-6  w-full">
       <div className="flex items-center"></div>
     </div>
     <div className="order-first lg:order-last flex-shrink-0 lg:w-[800px] h-[100px] ml-auto"></div>
   </div>
   <br />
-</div>
+
 
       <div className="py-200">
       <p className="text-2xl md:text-3xl lg:text-4xl text-white font-semibold ">CATCH ME IN ACTION</p>
