@@ -7,7 +7,7 @@ const audioFiles = [
   '/audio/My G.mp3',
   '/audio/olivetheboy - GoodSin myfreemp3.vip.mp3',
   '/audio/Blessed.mp3',
-  '/audio/Drift Remix (Dirty).mp3'
+  '/audio/Drift Remix (Dirty).mp3',
 
 ];
 
